@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  background-color: rgba(15, 15, 15, 0.836);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+  color: #ffff;
+}
+
+h3 {
+  font-size: 46px;
+}
+
+p {
+  text-align: center;
+  margin: 20px 0;
+  line-height: 22px;
+}
+
+.middle {
+  width: 65%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row {
+  position: relative;
+  width: 400px;
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: aliceblue;
+}
+
+button {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 90px;
+  border: none;
+  background-color: black;
+  color: #ffff;
+  z-index: 1000;
+}
+
+%loading {
+  height: 100%;
+  background-color: rgb(182, 182, 182);
+  z-index: 100;
+}
+.loading1 {
+  @extend %loading;
+  width: 380px;
+}
+.loading2 {
+  @extend %loading;
+  width: 378px;
+}
+.loading3 {
+  @extend %loading;
+  width: 366px;
+}
+.loading4 {
+  @extend %loading;
+  width: 360px;
+}
+.loading5 {
+  @extend %loading;
+  width: 385px;
+}
+.loading6 {
+  @extend %loading;
+  width: 350px;
+}
+.loading7 {
+  @extend %loading;
+  width: 330px;
+}
+.loading8 {
+  @extend %loading;
+  width: 280px;
+}
+
+.left {
+  margin-top: 40px;
+}
+
+h6 {
+  font-size: 18px;
+  text-align: center;
+}
+.focus::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 200px;
+  background-color: #ffff;
+  margin-top: 20px;
+}
+
+.skill {
+  margin-top: 20px;
+}
