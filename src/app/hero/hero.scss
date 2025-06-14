@@ -8,10 +8,10 @@ $primary-color: #ffff;
 $gray-title-color: rgb(202, 202, 202);
 
 .container {
-  background-image: url("../../../public/assets/images/download\ \(1\).jpeg");
+  background-image: url("../../../public/assets/images/laptop-sits-wooden-table-with-glass-wine_1124573-33014.avif");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  padding-bottom: 150px;
 }
 .content {
   padding-top: 150px;
@@ -36,4 +36,8 @@ $gray-title-color: rgb(202, 202, 202);
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: $primary-color;
 }

@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  width: 100%;
+  background-color: black;
+  color: #ffff;
+}
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h6 {
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+
+.left-contact {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 7px;
+}
+
+button {
+  height: fit-content;
+  padding: 8px 12px;
+  background-color: transparent;
+  border: 2px solid #ffff;
+  color: #ffff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffff;
+  color: black;
+}
+
+.icons {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}

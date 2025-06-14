@@ -12,44 +12,17 @@
     <div class="middle">
       <div class="left">
         <h6 class="focus">MY FOCUS</h6>
-        <h6 class="skill">ui/ux Design</h6>
-        <h6 class="skill">Responsive Design</h6>
-        <h6 class="skill">Web Design</h6>
-        <h6 class="skill">Mobile App Design</h6>
+        @for (job of jobs; track job){
+        <h6 class="skill">{{job}}</h6>
+        }
       </div>
       <div class="right">
+        @for (skill of skills; track skill.title){
         <div class="row">
-          <div class="loading1"></div>
-          <button>HTML</button>
+          <div class="{{skill.class}}"></div>
+          <button>{{skill.title}}</button>
         </div>
-        <div class="row">
-          <div class="loading2"></div>
-          <button>CSS</button>
-        </div>
-        <div class="row">
-          <div class="loading3"></div>
-          <button>JavaScript</button>
-        </div>
-        <div class="row">
-          <div class="loading4"></div>
-          <button>React</button>
-        </div>
-        <div class="row">
-          <div class="loading5"></div>
-          <button>Photoshop</button>
-        </div>
-        <div class="row">
-          <div class="loading6"></div>
-          <button>Adobe XD</button>
-        </div>
-        <div class="row">
-          <div class="loading7"></div>
-          <button>Node.js</button>
-        </div>
-        <div class="row">
-          <div class="loading8"></div>
-          <button>WordPress</button>
-        </div>
+        }
       </div>
     </div>
   </div>
